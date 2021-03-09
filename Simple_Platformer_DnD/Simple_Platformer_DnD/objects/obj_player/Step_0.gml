@@ -1,3 +1,20 @@
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 24072856
+/// @DnDArgument : "var" "vspeed"
+/// @DnDArgument : "op" "2"
+/// @DnDArgument : "value" "vspeed_max"
+if(vspeed > vspeed_max)
+{
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 4A626E91
+	/// @DnDParent : 24072856
+	/// @DnDArgument : "expr" "vspeed_max"
+	/// @DnDArgument : "var" "vspeed"
+	vspeed = vspeed_max;
+}
+
 /// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Down
 /// @DnDVersion : 1
 /// @DnDHash : 5B08C90D
