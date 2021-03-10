@@ -17,7 +17,6 @@
     {"id":{"name":"spr_life","path":"sprites/spr_life/spr_life.yy",},"order":9,},
     {"id":{"name":"spr_mushroom","path":"sprites/spr_mushroom/spr_mushroom.yy",},"order":10,},
     {"id":{"name":"spr_sword","path":"sprites/spr_sword/spr_sword.yy",},"order":11,},
-    {"id":{"name":"scr_movement_limiter","path":"scripts/scr_movement_limiter/scr_movement_limiter.yy",},"order":0,},
     {"id":{"name":"tileset0","path":"tilesets/tileset0/tileset0.yy",},"order":0,},
     {"id":{"name":"snd_get_mushroom","path":"sounds/snd_get_mushroom/snd_get_mushroom.yy",},"order":0,},
     {"id":{"name":"snd_kill_character","path":"sounds/snd_kill_character/snd_kill_character.yy",},"order":1,},
