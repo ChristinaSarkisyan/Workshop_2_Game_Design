@@ -17,4 +17,12 @@ if(l42BF31AE_0)
 	/// @DnDArgument : "y_relative" "1"
 	x += obj_player.x;
 	y += obj_player.y;
+
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 214483FD
+	/// @DnDParent : 42BF31AE
+	/// @DnDArgument : "expr" "obj_player.image_xscale"
+	/// @DnDArgument : "var" "image_xscale"
+	image_xscale = obj_player.image_xscale;
 }

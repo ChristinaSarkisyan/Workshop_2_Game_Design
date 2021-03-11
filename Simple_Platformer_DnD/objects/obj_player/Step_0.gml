@@ -320,6 +320,26 @@ else
 			vspeed = jump_height;
 		}
 	}
+
+	/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Pressed
+	/// @DnDVersion : 1
+	/// @DnDHash : 33D839F1
+	/// @DnDParent : 6CD967B1
+	/// @DnDArgument : "key" "ord("Z")"
+	var l33D839F1_0;
+	l33D839F1_0 = keyboard_check_pressed(ord("Z"));
+	if (l33D839F1_0)
+	{
+		/// @DnDAction : YoYo Games.Instances.Create_Instance
+		/// @DnDVersion : 1
+		/// @DnDHash : 4555FFCD
+		/// @DnDParent : 33D839F1
+		/// @DnDArgument : "xpos" "x"
+		/// @DnDArgument : "ypos" "y"
+		/// @DnDArgument : "objectid" "obj_sword"
+		/// @DnDSaveInfo : "objectid" "obj_sword"
+		instance_create_layer(x, y, "Instances", obj_sword);
+	}
 }
 
 /// @DnDAction : YoYo Games.Common.If_Variable
