@@ -121,6 +121,85 @@ if(climbing == true)
 		x += 0;
 		y += -1 * climb_speed;
 	}
+
+	/// @DnDAction : YoYo Games.Collisions.If_Object_At
+	/// @DnDVersion : 1.1
+	/// @DnDHash : 184FDA67
+	/// @DnDParent : 133A236A
+	/// @DnDArgument : "x_relative" "1"
+	/// @DnDArgument : "y" "self.image_yscale"
+	/// @DnDArgument : "y_relative" "1"
+	/// @DnDArgument : "object" "obj_block"
+	/// @DnDSaveInfo : "object" "obj_block"
+	var l184FDA67_0 = instance_place(x + 0, y + self.image_yscale, obj_block);
+	if ((l184FDA67_0 > 0))
+	{
+		/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 3CDBA321
+		/// @DnDParent : 184FDA67
+		/// @DnDArgument : "expr" "false"
+		/// @DnDArgument : "var" "climbing"
+		climbing = false;
+	
+		/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Down
+		/// @DnDVersion : 1
+		/// @DnDHash : 3043DF02
+		/// @DnDParent : 184FDA67
+		/// @DnDArgument : "key" "vk_left"
+		var l3043DF02_0;
+		l3043DF02_0 = keyboard_check(vk_left);
+		if (l3043DF02_0)
+		{
+			/// @DnDAction : YoYo Games.Movement.Jump_To_Point
+			/// @DnDVersion : 1
+			/// @DnDHash : 180B1BE4
+			/// @DnDParent : 3043DF02
+			/// @DnDArgument : "x" "-move_speed"
+			/// @DnDArgument : "x_relative" "1"
+			/// @DnDArgument : "y" "0"
+			/// @DnDArgument : "y_relative" "1"
+			x += -move_speed;
+			y += 0;
+		
+			/// @DnDAction : YoYo Games.Movement.Set_Speed
+			/// @DnDVersion : 1
+			/// @DnDHash : 118188FC
+			/// @DnDParent : 3043DF02
+			/// @DnDArgument : "speed" "jump_height"
+			/// @DnDArgument : "type" "2"
+			vspeed = jump_height;
+		}
+	
+		/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Down
+		/// @DnDVersion : 1
+		/// @DnDHash : 774AD8B3
+		/// @DnDParent : 184FDA67
+		/// @DnDArgument : "key" "vk_right"
+		var l774AD8B3_0;
+		l774AD8B3_0 = keyboard_check(vk_right);
+		if (l774AD8B3_0)
+		{
+			/// @DnDAction : YoYo Games.Movement.Jump_To_Point
+			/// @DnDVersion : 1
+			/// @DnDHash : 08D98202
+			/// @DnDParent : 774AD8B3
+			/// @DnDArgument : "x" "move_speed"
+			/// @DnDArgument : "x_relative" "1"
+			/// @DnDArgument : "y" "0"
+			/// @DnDArgument : "y_relative" "1"
+			x += move_speed;
+			y += 0;
+		
+			/// @DnDAction : YoYo Games.Movement.Set_Speed
+			/// @DnDVersion : 1
+			/// @DnDHash : 66BE6C93
+			/// @DnDParent : 774AD8B3
+			/// @DnDArgument : "speed" "jump_height"
+			/// @DnDArgument : "type" "2"
+			vspeed = jump_height;
+		}
+	}
 }
 
 /// @DnDAction : YoYo Games.Common.Else
