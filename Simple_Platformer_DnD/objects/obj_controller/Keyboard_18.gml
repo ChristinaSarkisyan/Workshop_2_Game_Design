@@ -36,12 +36,14 @@ var l2F56D356_0;
 l2F56D356_0 = keyboard_check_pressed(ord("L"));
 if (l2F56D356_0)
 {
-	/// @DnDAction : YoYo Games.Common.Execute_Code
+	/// @DnDAction : YoYo Games.Instance Variables.Set_Lives
 	/// @DnDVersion : 1
-	/// @DnDHash : 781B7EFA
+	/// @DnDHash : 1D2D6245
 	/// @DnDParent : 2F56D356
-	/// @DnDArgument : "code" "//add lives += 5 here"
-	//add lives += 5 here
+	/// @DnDArgument : "lives" "5"
+	/// @DnDArgument : "lives_relative" "1"
+	if(!variable_instance_exists(id, "__dnd_lives")) __dnd_lives = 0;
+	__dnd_lives += real(5);
 }
 
 /// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Pressed
@@ -57,4 +59,26 @@ if (l309A37B9_0)
 	/// @DnDHash : 0FC9F1C3
 	/// @DnDParent : 309A37B9
 	room_goto_next();
+}
+
+/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Key_Pressed
+/// @DnDVersion : 1
+/// @DnDHash : 64BBB20A
+/// @DnDArgument : "key" "ord("J")"
+var l64BBB20A_0;
+l64BBB20A_0 = keyboard_check_pressed(ord("J"));
+if (l64BBB20A_0)
+{
+	/// @DnDAction : YoYo Games.Movement.Jump_To_Point
+	/// @DnDVersion : 1
+	/// @DnDHash : 4E7FC768
+	/// @DnDComment : will teleport your player to the end of the room
+	/// @DnDApplyTo : {obj_player}
+	/// @DnDParent : 64BBB20A
+	/// @DnDArgument : "x" "862"
+	/// @DnDArgument : "y" "670"
+	with(obj_player) {
+	x = 862;
+	y = 670;
+	}
 }
