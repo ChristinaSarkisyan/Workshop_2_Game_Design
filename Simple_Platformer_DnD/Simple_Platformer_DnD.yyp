@@ -33,6 +33,7 @@
     {"id":{"name":"obj_ladder","path":"objects/obj_ladder/obj_ladder.yy",},"order":5,},
     {"id":{"name":"obj_level_exit","path":"objects/obj_level_exit/obj_level_exit.yy",},"order":6,},
     {"id":{"name":"obj_death","path":"objects/obj_death/obj_death.yy",},"order":7,},
+    {"id":{"name":"obj_sword","path":"objects/obj_sword/obj_sword.yy",},"order":12,},
     {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},"order":8,},
     {"id":{"name":"obj_mushroom","path":"objects/obj_mushroom/obj_mushroom.yy",},"order":9,},
     {"id":{"name":"obj_monster_dead","path":"objects/obj_monster_dead/obj_monster_dead.yy",},"order":10,},
